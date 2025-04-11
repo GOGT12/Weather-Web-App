@@ -71,6 +71,7 @@ function renderData(data,unit = 'celsius'){
     // Date //
     const currentDate = document.createElement('p')
     currentDate.textContent = `Day: ${getDayName(data.days[0].datetime)}`
+    console.log(getDayName(data.days[0].datetime))
 
     // Temperature
     const cityTemperature = document.createElement('p');

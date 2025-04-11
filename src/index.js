@@ -16,6 +16,7 @@ const searchButton = document.querySelector('#search-button');
     renderGif(data);
     renderData(data);
     changeUnits(data);
+    console.log(data)
 
     function handleSearch() {
         // Check if input is valid

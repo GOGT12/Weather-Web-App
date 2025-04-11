@@ -54,10 +54,10 @@ function fahrenheitToCelsius(fahrenheit) {
 
 
 // Get Day Name //
-function getDayName(dateString){
-    const date = new Date(dateString);
-    const options = {weekday: 'long'};
-    return date.toLocaleDateString('en-US',options)
+function getDayName(dateString) {
+    const date = new Date(dateString.replace(/-/g, '/'));
+    const options = { weekday: 'long' };
+    return date.toLocaleDateString('en-US', options);
 }
 
 export {fahrenheitToCelsius , weatherData, weatherImg, getDayName}
