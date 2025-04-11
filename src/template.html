@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-App</title>
+</head>
+<body>
+    <div id="container">
+        <div id="content">
+            <h1>Weather-App</h1>
+            <h2>CelestiumCode</h2>
+            <div id="input-content">
+                <input type="text" id="input" required pattern="[A-Za-zñ\s]+" placeholder="Enter city">
+                <button id="search-button"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
+                  </svg>
+                </button>
+                <button id="convertion">°F</button>
+
+            </div>
+            <div id="data-content">
+                <div id="icon-content"></div>
+                <div id="data-content-tmp"></div>
+                <div id="days-tmp"></div>
+
+            </div>
+
+            <div class="box-hour"></div>
+        </div>
+
+    </div>
+
+</body>
+</html>

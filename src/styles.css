@@ -1,0 +1,229 @@
+*{
+    font-family: 'Great Vibes', cursive;
+}
+body{
+
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#container{
+
+    height: 100vh;
+    width: 100vw ;
+    min-height: 500px;
+    min-width: 795px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#content{
+
+    background-color: rgb(0, 0, 0, 0.65);
+    backdrop-filter: blur(0px);
+    height: 92%;
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    /* Titles */
+    #content h1{
+        color: rgb(255, 238, 3);
+        margin: 10px;
+        font-size: 40px;
+    }
+    #content h2{
+        color: rgb(255, 175, 15);
+        font-size: 27px;
+        margin: 0;
+        margin-bottom: 18px;
+    }
+    /* Input */
+    #input-content{
+        display: flex;
+        gap: 15px;
+    }
+    input{
+        height: 30px ;
+        width: 250px ;
+        border-radius: 6px;
+        border: none;
+    }
+    #search-button{
+        border-radius: 6px;
+        border: none;
+    }
+    #convertion{
+        border-radius: 6px;
+        border: none;
+        width: 35px;
+    }
+
+    /* Data Content */
+    #data-content{
+
+        margin-top: 4px;
+        padding-top: 15px;
+        height: 47.5% ;
+        width: 80% ;
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+        color: rgba(255, 255, 255, 0.967);
+    }
+
+        #icon-content{
+
+            height: auto ;
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 8%;
+            font-size: 20px;
+            gap: 8px;
+        }
+            #icon-content img{
+                height: 100px ;
+                width: 100px;
+            }
+
+        #data-content-tmp{
+            height: auto;
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0% 3%;
+        }
+        #data-content-tmp h2{
+            color: rgba(255, 213, 129, 0.901);
+            font-size: 37px;
+        }
+        #data-content-tmp p{
+            margin: 14px;
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+
+    /* NEXT DAYS SECTION*/
+
+    #days-tmp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .next-days-span{
+        font-size: 25px;
+        color: rgba(255, 215, 135, 0.956);
+    }
+    /*Big Box*/
+    .days-big-box{
+
+        position: relative;
+        height: 282px;
+        width: 173px ;
+        overflow-y: hidden;
+        scrollbar-gutter: stable;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .days-big-box:hover{
+        overflow-y: auto;
+    }
+
+        .days-big-box::-webkit-scrollbar {
+            width: 5px;  /* Ajusta el tamaño de la barra de desplazamiento */
+        }
+        .days-big-box::-webkit-scrollbar-track {
+            background: #f0f0f0;  /* Color del fondo de la barra */
+            border-radius: 10px;
+        }
+        .days-big-box::-webkit-scrollbar-thumb {
+            background: #474747;  /* Color del "dedo" */
+            border-radius: 10px;
+        }
+
+    .days-box-little{
+        height: 140px;
+        border-bottom: 1px solid;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 16px;
+    }
+    .days-box-little p{
+        margin: 2px;
+    }
+
+    /*WEATHER BY HOURS SECTION*/
+
+    .box-hour{
+        margin-top: 38px;
+        height: 17.7%;
+        width: 75% ;
+        display: flex;
+        overflow-x: hidden;
+        scrollbar-gutter: stable;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    .box-hour:hover{
+        overflow-x: auto;
+    }
+
+    .box-hour::-webkit-scrollbar {
+        height: 5px;
+    }
+
+    .box-hour::-webkit-scrollbar-track {
+        background: #f0f0f0;
+        border-radius: 10px;
+    }
+
+    .box-hour::-webkit-scrollbar-thumb {
+        background: #474747;
+        border-radius: 10px;
+    }
+
+    .hour-box-little{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 120px;
+        padding: 0 20px;
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.951);
+    }
+
+    .hour-box-little p {
+        margin: 0px;
+    }
+    .hour-box-little img{
+        height: 60px;
+        width: 60px;
+    }
+
+    .day-separator {
+        height: 70px ;
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin: 20px 0;
+        text-align: center;
+        color: #444;
+        background-color: #f0f0f0;
+        padding: 2px 5px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        }
